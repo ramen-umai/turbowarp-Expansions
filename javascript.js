@@ -1,7 +1,3 @@
-if (!Scratch.extensions.unsandboxed) {
-    throw new Error('This Block Utility example must run unsandboxed');
-}
-
 class JSExecutorExtension {
     getInfo() {
       return {
