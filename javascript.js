@@ -1,3 +1,10 @@
+(function(Scratch) {
+  'use strict';
+
+if (!Scratch.extensions.unsandboxed) {
+    throw new Error('This Block Utility example must run unsandboxed');
+}
+
 class JSExecutorExtension {
     getInfo() {
       return {
@@ -67,4 +74,4 @@ class JSExecutorExtension {
   }
   
   Scratch.extensions.register(new JSExecutorExtension());
-  
+  })(Scratch);
